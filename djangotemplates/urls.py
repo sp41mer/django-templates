@@ -27,12 +27,26 @@ urlpatterns = [
     path('fb_show_school/<int:pk>/', function_views.show_school),
     path('fb_all_schools/', function_views.all_schools),
 
+    path('fb_all_students/', function_views.all_students),
+    path('fb_create_student/', function_views.create_student),
+    path('fb_delete_student/<int:pk>/', function_views.delete_student),
+    path('fb_update_student/<int:pk>/', function_views.edit_student),
+
+
+
+
     # Class based views
     path('cb_create_school/', class_based_views.CreateSchoolView.as_view()),
     path('cb_all_template/', class_based_views.AllSchoolsTemplateView.as_view()),
     path('cb_detail/<int:pk>/', class_based_views.SchoolDetailView.as_view()),
     path('cb_create/', class_based_views.SchoolCreateView.as_view()),
     path('cb_list/', class_based_views.SchoolsListView.as_view()),
+
+    path('cb_create_student/', class_based_views.CreateStudentView.as_view()),
+    path('cb_all_students/', class_based_views.AllStudentsTemplateView.as_view()),
+    path('cb_student_detail/<int:pk>/', class_based_views.StudentDetailView.as_view()),
+    path('cb_student_create/', class_based_views.StudentCreateView.as_view()),
+    path('cb_student_list/', class_based_views.StudentListView.as_view()),
 
     path('admin/', admin.site.urls),
 ]

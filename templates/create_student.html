@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Create student {% endblock title %}
+
+{% block content %}
+
+    <h1> Create student </h1>
+    <form method="post" novalidate>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create</button>
+    </form>
+
+{% endblock content %}
