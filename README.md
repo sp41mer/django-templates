@@ -27,3 +27,10 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
+
+## Custom template tags
+
+`school/templatetags/school_extras.py` shows the three kinds you actually
+use: a filter (`age_group`), a `simple_tag` computing a value in place,
+and an `inclusion_tag` rendering `templates/school_card.html` with its own
+context — the template-side analogue of extracting a helper function.
