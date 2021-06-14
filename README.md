@@ -1,5 +1,7 @@
 # Django views & forms — side-by-side reference
 
+[![CI](https://github.com/sp41mer/django-templates/actions/workflows/ci.yml/badge.svg)](https://github.com/sp41mer/django-templates/actions/workflows/ci.yml)
+
 Teaching repo with two parallel implementations of the same small app, so
 you can compare approaches line by line instead of reading abstract advice.
 
